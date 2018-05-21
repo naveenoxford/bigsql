@@ -261,7 +261,7 @@ curl -i  -b $sessionid -X POST -d '{ name: "bigsql", group: "jdbc", properties: 
 
 if [ $deploybasestack -eq 0 ]
 then
-yum install -y git python-argparse mysql-connector-java* ksh redhat-lsb-core
+yum install -y git mysql-connector-java* ksh redhat-lsb-core python-argparse python-configobj nc ack 
 cd ~
 git clone https://github.com/seanorama/ambari-bootstrap.git
 
